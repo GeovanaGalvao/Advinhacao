@@ -23,7 +23,7 @@ while tentativa < 4:
         os.system('cls')
         continue
 
-    if chute < 0 or chute > 10:
+    if chute not in range(0, 11):
         print("\n\t Por favor, digite um numero\n\tmaior que zero e menor que 10")
         time.sleep(3)
         os.system('cls')
